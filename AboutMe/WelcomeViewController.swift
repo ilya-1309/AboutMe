@@ -9,16 +9,21 @@ import UIKit
 
 final class WelcomeViewController: UIViewController {
 
-    @IBOutlet var userNameLabel: UILabel!
+    
+    @IBOutlet var userNameLabel: UITextField!
+    @IBOutlet var welcomeLabel: UITextField!
+    
+    var userNameValue: String!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-     
+        userNameLabel.text = userNameValue
+      
     }
     
     @IBAction func LogOutAction() {
+        dismiss(animated: true)
     }
     
 }
