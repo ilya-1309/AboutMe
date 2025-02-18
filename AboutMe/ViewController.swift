@@ -33,8 +33,6 @@ final class ViewController: UIViewController {
         passwordTextField.autocorrectionType = .no
         passwordTextField.textContentType = .oneTimeCode
         
-//        let tagGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-//        view.addGestureRecognizer(tagGesture)
         
     }
     
@@ -43,9 +41,11 @@ final class ViewController: UIViewController {
         welcomeVC?.userNameValue = userNameTextField.text
     }
     
-//    override func touchesBegan(_ touches: Set, with event: UIEvent?) {
-//        super.touchesBegan(touches, with: event)
-//    }
+    @IBAction func unwindToLogin(_ segue: UIStoryboardSegue) {
+        userNameTextField.text = ""
+        userNameTextField.text = ""
+        
+    }
     
 }
 

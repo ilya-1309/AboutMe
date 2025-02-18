@@ -10,8 +10,9 @@ import UIKit
 final class WelcomeViewController: UIViewController {
 
     
-    @IBOutlet var userNameLabel: UITextField!
-    @IBOutlet var welcomeLabel: UITextField!
+
+    @IBOutlet var userNameLabel: UILabel!
+    @IBOutlet var welcomeLabel: UILabel!
     
     var userNameValue: String!
     
@@ -23,7 +24,7 @@ final class WelcomeViewController: UIViewController {
     }
     
     @IBAction func LogOutAction() {
-        dismiss(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
 }
