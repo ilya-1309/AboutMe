@@ -104,55 +104,49 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Log out"/>
                                 <connections>
-                                    <action selector="LogOutAction" destination="dxM-6E-Ii1" eventType="touchUpInside" id="gcW-Bv-eQO"/>
+                                    <action selector="LogOutAction" destination="dxM-6E-Ii1" eventType="touchUpInside" id="4LU-iB-1ne"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKH-IK-QYM">
-                                <rect key="frame" x="90" y="268" width="213" height="34"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ivY-Tn-41E">
+                                <rect key="frame" x="102" y="193" width="189" height="50"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome," borderStyle="roundedRect" placeholder="Welcome" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gh0-Ic-IWP">
-                                        <rect key="frame" x="0.0" y="0.0" width="101.66666666666667" height="34"/>
-                                        <color key="backgroundColor" systemColor="labelColor"/>
-                                        <color key="tintColor" red="0.23648458720000001" green="0.37315449119999999" blue="0.70983821150000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Wekcome," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q1-QA-InI">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KsB-xR-bGT">
-                                        <rect key="frame" x="101.66666666666666" y="0.0" width="111.33333333333334" height="34"/>
-                                        <color key="backgroundColor" systemColor="labelColor"/>
-                                        <color key="tintColor" red="0.23648458720000001" green="0.37315449119999999" blue="0.70983821150000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yu-5b-Gai">
+                                        <rect key="frame" x="89" y="0.0" width="100" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <color key="tintColor" systemColor="linkColor"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OLN-ZW-WXL"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.29413300749999999" green="0.46822917460000002" blue="0.8902388215" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="OLN-ZW-WXL" firstAttribute="trailing" secondItem="QKH-IK-QYM" secondAttribute="trailing" constant="90" id="6xZ-XV-cF2"/>
-                            <constraint firstItem="QKH-IK-QYM" firstAttribute="centerX" secondItem="LFX-pU-1zX" secondAttribute="centerX" id="7Ox-L5-gO8"/>
-                            <constraint firstItem="QKH-IK-QYM" firstAttribute="leading" secondItem="OLN-ZW-WXL" secondAttribute="leading" constant="90" id="F1Q-3k-8Tk"/>
+                            <constraint firstItem="OLN-ZW-WXL" firstAttribute="trailing" secondItem="ivY-Tn-41E" secondAttribute="trailing" constant="102" id="45B-NM-ltR"/>
+                            <constraint firstItem="ivY-Tn-41E" firstAttribute="centerX" secondItem="LFX-pU-1zX" secondAttribute="centerX" id="4tw-9k-sfe"/>
                             <constraint firstItem="OLN-ZW-WXL" firstAttribute="trailing" secondItem="b9L-Gf-j3z" secondAttribute="trailing" constant="134" id="Tb2-rn-kZ8"/>
+                            <constraint firstItem="ivY-Tn-41E" firstAttribute="leading" secondItem="OLN-ZW-WXL" secondAttribute="leading" constant="102" id="jKl-lF-Ljs"/>
                             <constraint firstItem="OLN-ZW-WXL" firstAttribute="bottom" secondItem="b9L-Gf-j3z" secondAttribute="bottom" constant="155" id="jw8-nh-FAN"/>
                             <constraint firstItem="b9L-Gf-j3z" firstAttribute="leading" secondItem="OLN-ZW-WXL" secondAttribute="leading" constant="134" id="uYE-RU-ppU"/>
-                            <constraint firstItem="QKH-IK-QYM" firstAttribute="top" secondItem="OLN-ZW-WXL" secondAttribute="top" constant="165" id="x10-kM-yEo"/>
+                            <constraint firstItem="ivY-Tn-41E" firstAttribute="top" secondItem="OLN-ZW-WXL" secondAttribute="top" constant="90" id="z7u-sF-gKR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ToL-CL-aeg"/>
                     <connections>
-                        <outlet property="userNameLabel" destination="KsB-xR-bGT" id="81N-K7-Tch"/>
-                        <outlet property="welcomeLabel" destination="Gh0-Ic-IWP" id="f9Y-Mo-C9W"/>
+                        <outlet property="userNameLabel" destination="5yu-5b-Gai" id="JA8-8r-hC6"/>
+                        <outlet property="welcomeLabel" destination="2Q1-QA-InI" id="7bL-S5-bWh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qfi-yR-dbY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1560" y="3"/>
+            <point key="canvasLocation" x="1559.5419847328244" y="2.8169014084507045"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mbe-yF-K5T">
@@ -177,17 +171,8 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
