@@ -8,10 +8,9 @@
 import UIKit
 
 final class WelcomeViewController: UIViewController {
-
+    
     
 
-    @IBOutlet var userNameLabel: UILabel!
     @IBOutlet var welcomeLabel: UILabel!
     
     var userNameValue: String!
@@ -19,12 +18,12 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNameLabel.text = userNameValue
-      
+       // welcomeLabel.text = "Welcome, \(String(describing: userNameValue))!"
+          welcomeLabel.text = "Welcome, \(userNameValue ?? "гость")!"
+        
     }
     
     @IBAction func LogOutAction() {
         navigationController?.popViewController(animated: true)
     }
-    
 }
