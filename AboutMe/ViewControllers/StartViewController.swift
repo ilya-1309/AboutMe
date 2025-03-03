@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StartViewController.swift
 //  AboutMe
 //
 //  Created by Ilya Feklin on 10.02.2025.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class StartViewController: UIViewController {
     
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -18,6 +18,8 @@ final class ViewController: UIViewController {
     @IBOutlet var logInButton: UIButton!
     @IBOutlet var forgotUserNameButton: UIButton!
     @IBOutlet var forgotPasswordButton: UIButton!
+    
+    private let user = User.getSampleUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,14 +35,6 @@ final class ViewController: UIViewController {
         passwordTextField.autocorrectionType = .no
         passwordTextField.textContentType = .oneTimeCode
     }
-    
-    //(можно ли юзать так?)
-    //        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-    //                view.addGestureRecognizer(tapGesture)
-    
-    //    @objc private func dismissKeyboard() {
-    //        view.endEditing(true)
-    //    }
             
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
